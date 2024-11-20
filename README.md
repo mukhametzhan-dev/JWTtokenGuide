@@ -307,7 +307,7 @@ public class AuthController {
 Ensure that the frontend includes the JWT in the `Authorization` header for protected requests.
 
 ```javascript
-// Example using Axios
+// Example using Axios 
 axios.get('/api/protected', {
   headers: {
     'Authorization': `Bearer ${token}`
@@ -318,11 +318,8 @@ axios.get('/api/protected', {
 ## Best Practices
 
 - **Secure Secret Keys:** Store secret keys securely, preferably using environment variables.
-- **Token Expiration:** Set appropriate expiration times for tokens.
+- **Token Expiration:** Set appropriate expiration times for tokens consider your applying cases
 - **HTTPS:** Always use HTTPS in production to prevent token interception.
-- **Refresh Tokens:** Implement refresh tokens for long-lived sessions.
+- **Refresh Tokens:** Implement refresh tokens for long-lived sessions .
 - **Error Handling:** Properly handle exceptions and edge cases.
 
-## Conclusion
-
-Implementing JWT authentication in your Spring Boot project enhances security by ensuring that only authenticated users can access protected resources. By following this guide, you can set up JWT properly and adhere to best practices for a secure application.
